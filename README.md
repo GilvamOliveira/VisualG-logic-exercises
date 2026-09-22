@@ -1,11 +1,31 @@
-# Meteoro de Lógica
+# ☄️ Meteoro de Lógica
 
-Abra `index.html` no navegador. Use a tecla **M** ou o botão **Manz** para ir à apostila Manzano, e a tecla **F** ou o botão **Fac** para ir à Faccat.
+Uma ferramenta interativa para organizar, consultar e registrar exercícios de lógica de programação desenvolvidos no **VisualG**, com suporte e referências diretas às apostilas **Manzano** e **Faccat**.
 
-## Exercícios
+🔗 **[Acesse o projeto online]([https://github.io](https://gilvamoliveira.github.io/VisualG-logic-exercises/))**
 
-Os exercícios iniciais ficam em `data/exercises.js`. O arquivo contém apenas a organização confirmada (página, capítulo e número), sem enunciados inventados.
+---
 
-Para registrar o que já foi feito no VisualG, abra um cartão, preencha o título, o enunciado e o código e clique em **Salvar**. Para criar outros, use **Adicionar exercício**. As alterações feitas pela interface ficam salvas neste navegador, mesmo ao recarregar a página.
+## 🚀 Como Navegar
 
-Para mudar a lista-base do projeto, edite os grupos em `data/exercises.js`. Novos navegadores usam essa lista-base; dados já salvos localmente continuam preservados.
+Para rodar o projeto localmente, abra o arquivo `index.html` no seu navegador. Você pode alternar rapidamente entre as apostilas utilizando os botões da interface ou os atalhos do teclado:
+
+* **Apostila Manzano:** Pressione a tecla **M** ou clique no botão **Manz**.
+* **Apostila Faccat:** Pressione a tecla **F** ou clique no botão **Fac**.
+
+---
+
+## 📝 Gerenciamento de Exercícios
+
+### Estrutura Inicial
+* A lista-base dos exercícios fica localizada em `data/exercises.js`.
+* O arquivo contém apenas a organização oficial confirmada (**página, capítulo e número**), sem enunciados inventados.
+
+### Como Registrar e Criar Exercícios
+* **Registrar Progresso:** Para salvar o que já foi feito no VisualG, abra o cartão do exercício correspondente, preencha o **título**, o **enunciado** e o **código**, e clique em **Salvar**.
+* **Novos Exercícios:** Utilize o botão **Adicionar exercício** para criar novos cartões na interface.
+
+### Armazenamento dos Dados
+* **Persistência Local:** Todas as alterações feitas pela interface ficam salvas automaticamente no armazenamento do seu navegador. Os dados são preservados mesmo ao recarregar a página.
+* **Alteração Definitiva:** Para mudar a lista padrão do projeto, edite diretamente os grupos no arquivo `data/exercises.js`. Novos navegadores carregarão essa base, enquanto dados já salvos localmente continuarão preservados.
+
