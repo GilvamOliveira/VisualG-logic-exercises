@@ -53,13 +53,42 @@ fimalgoritmo`,
     title: "Prestação em atraso",
     prompt:
       "Calcular uma prestação em atraso: PRESTACAO ← VALOR + (VALOR * TAXA / 100) * TEMPO.",
-    code: `algoritmo "PrestacaoAtrasada"
-var valor, taxa, tempo, prestacao: real
-inicio
-  leia(valor, taxa, tempo)
-  prestacao <- valor + (valor * taxa / 100) * tempo
-  escreval(prestacao:4:2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01E"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Efetua o cálculo e a apresenta o valor de uma prestação em
+//               atraso, utilizando a fórmula
+//               PRESTACAO <- VALOR + (VALOR * TAXA/100) * TEMPO).
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 22/09/2026
+Var
+   // Seção de Declarações das variáveis
+   prestacao, valor, taxa, diferenca : real
+   temp : inteiro
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Prestação em Atraso --")
+   Escreval("")
+
+   Escreva("Digite o valor da prestação: R$ ")
+   Leia(valor)
+   Escreval("")
+
+   Escreva("Digite a taxa da prestação: ")
+   Leia(taxa)
+   Escreval("")
+
+   Escreva("Digite o tempo de atraso (em meses): ")
+   Leia(temp)
+   Escreval("")
+
+   prestacao <- valor + (valor * taxa / 100) * temp)
+   diferenca <- prestacao - valor
+   
+   Escreval("O valor em atraso será de: R$", prestacao:6:2)
+   Escreval("O valor do juros é de: R$", diferenca:6:2)
+
+Fimalgoritmo`,
   },
   "manzano-25-F": {
     title: "Troca de valores",
