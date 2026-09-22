@@ -94,15 +94,39 @@ Fimalgoritmo`,
     title: "Troca de valores",
     prompt:
       "Ler dois valores A e B, trocar seus valores e apresentá-los após a troca.",
-    code: `algoritmo "TrocaDeValores"
-var a, b, auxiliar: real
-inicio
-  leia(a, b)
-  auxiliar <- a
-  a <- b
-  b <- auxiliar
-  escreval("A=",a," B=",b)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01F"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê dois valores (inteiros, reais ou caracteres) para as
+//               variáveis A e B, e efetua a troca dos valores de forma que
+//               a variável A passe a possuir o valor da variável B e
+//               a variável B passe a possuir o valor da variável A.
+//               Apresenta os valores trocados.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 22/09/2026
+Var
+   // Seção de Declarações das variáveis
+   a, b, auxiliar: real
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Troca de Valores --")
+   Escreval("")
+
+   Escreva("Informe o valor de A: ")
+   Leia(a)
+   Escreval("")
+
+   Escreva("Informe o valor de B: ")
+   Leia(b)
+   Escreval("")
+
+   auxiliar <- a
+   a <- b
+   b <- auxiliar
+
+   Escreval("A =", a, "|" ,"B =", b)
+
+Fimalgoritmo`,
   },
   "manzano-25-G": {
     title: "Propriedade distributiva",
