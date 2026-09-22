@@ -2,7 +2,7 @@
 
 Uma ferramenta interativa para organizar, consultar e registrar exercícios de lógica de programação desenvolvidos no **VisualG**, com suporte e referências diretas às apostilas **Manzano** e **Faccat**.
 
-🔗 **[Acesse o projeto online](https://github.io](https://gilvamoliveira.github.io/VisualG-logic-exercises/))**
+🔗 **[Acesse o projeto online](https://gilvamoliveira.github.io/VisualG-logic-exercises/)**
 
 ---
 
