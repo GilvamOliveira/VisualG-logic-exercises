@@ -1,0 +1,264 @@
+:root {
+    --ink: #15213b;
+    --accent: #4969e8
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, system-ui, Arial, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(135deg, #eef2ff, #f9fbff 45%, #eef3fb)
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: .45;
+    background-image: linear-gradient(#ffffff80 1px, transparent 1px), linear-gradient(90deg, #ffffff80 1px, transparent 1px);
+    background-size: 42px 42px
+}
+
+.exercise-app {
+    position: relative;
+    width: min(1100px, 94vw);
+    margin: auto;
+    padding: clamp(24px, 5vw, 64px) 0
+}
+
+.back {
+    display: inline-flex;
+    margin-bottom: 36px;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 700
+}
+
+.eyebrow {
+    margin: 0;
+    color: var(--accent);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase
+}
+
+h1 {
+    margin: 5px 0 8px;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    letter-spacing: -.06em
+}
+
+header>p:last-child {
+    margin: 0 0 38px;
+    color: #53617d
+}
+
+.group {
+    background: #ffffffd9;
+    border: 1px solid #dfe6f8;
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 14px 30px #2639620c;
+    margin: 18px 0
+}
+
+.group-title {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px
+}
+
+.group-title span {
+    padding: 5px 9px;
+    border-radius: 7px;
+    color: #314ec4;
+    background: #e9eeff;
+    font-weight: 800;
+    font-size: .8rem
+}
+
+.group h2 {
+    margin: 0;
+    font-size: 1rem
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 10px
+}
+
+.exercise-card {
+    min-height: 94px;
+    padding: 13px;
+    border: 1px solid #dce3f2;
+    border-radius: 12px;
+    text-align: left;
+    color: inherit;
+    background: linear-gradient(180deg, #fff, #f8faff);
+    cursor: pointer;
+    transition: .15s
+}
+
+.exercise-card:hover,
+.exercise-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 18px #2639621a;
+    outline: 2px solid var(--accent);
+    outline-offset: 2px
+}
+
+.exercise-card b {
+    display: inline-grid;
+    place-items: center;
+    width: 27px;
+    height: 27px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background: #e8edff;
+    color: #3855d0
+}
+
+.exercise-card span,
+.exercise-card small {
+    display: block
+}
+
+.exercise-card span {
+    font-weight: 750;
+    font-size: .88rem
+}
+
+.exercise-card small {
+    margin-top: 5px;
+    color: #71809f;
+    font-size: .7rem
+}
+
+.add {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #aab8df;
+    border-radius: 13px;
+    color: #3655c9;
+    background: #ffffff99;
+    font: 700 1rem inherit;
+    cursor: pointer
+}
+
+.add:hover {
+    background: #fff
+}
+
+dialog {
+    width: min(680px, 94vw);
+    border: 0;
+    border-radius: 20px;
+    padding: 0;
+    color: var(--ink);
+    box-shadow: 0 22px 80px #11182b66
+}
+
+dialog::backdrop {
+    background: #10162a88;
+    backdrop-filter: blur(3px)
+}
+
+form {
+    padding: 24px
+}
+
+.dialog-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px
+}
+
+.dialog-head h2 {
+    margin: 0
+}
+
+.icon {
+    border: 0;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer
+}
+
+label {
+    display: block;
+    margin: 13px 0;
+    color: #43506a;
+    font-size: .82rem;
+    font-weight: 750
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccd6ec;
+    border-radius: 9px;
+    color: var(--ink);
+    background: #fbfcff;
+    font: 400 1rem inherit
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.45
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 24px
+}
+
+.primary,
+.secondary {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 9px;
+    font: 700 .9rem inherit;
+    cursor: pointer
+}
+
+.primary {
+    margin-left: auto;
+    color: #fff;
+    background: var(--accent)
+}
+
+.secondary {
+    color: #b13245;
+    background: #fff0f2
+}
+
+@media(max-width:520px) {
+    .group {
+        padding: 16px
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .exercise-card {
+        min-height: 88px
+    }
+}
