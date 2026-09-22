@@ -132,29 +132,109 @@ Fimalgoritmo`,
     title: "Propriedade distributiva",
     prompt:
       "Ler A, B, C e D e apresentar as adições e multiplicações de cada par: A com B, C e D; B com C e D; C com D.",
-    code: `algoritmo "PropriedadeDistributiva"
-var a, b, c, d: inteiro
-inicio
-  leia(a, b, c, d)
-  escreval(a+b," ",a*b)
-  escreval(a+c," ",a*c)
-  escreval(a+d," ",a*d)
-  escreval(b+c," ",b*c)
-  escreval(b+d," ",b*d)
-  escreval(c+d," ",c*d)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01G"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê quatro números inteiros e apresentar o resultado da adição
+//               e multiplicação, baseando-se na utilização do conceito da
+//               propriedade distributiva. Ou seja, se forem lidas as variáveis
+//               A, B, C, e D, devem ser somadas e multiplicadas A com B,
+//               A com C e A com D. Depois B com C, B com D e por fim C com D.
+//               Perceba que será necessário efetuar seis operações de adição e
+//               seis operações de multiplicação e apresentar doze resultados
+//               de saída.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 22/09/2026
+Var
+   // Seção de Declarações das variáveis
+   a, b, c, d: inteiro
+   somAB, somAC, somAD, somBC, somBD, somCD: inteiro
+   multAB, multAC, multAD, multBC, multBD, multCD: inteiro
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Propriedade Distributiva --")
+   Escreval("")
+
+   Escreva("Informe o valor de A: ")
+   Leia(a)
+   Escreval("")
+
+   Escreva("Informe o valor de B: ")
+   Leia(b)
+   Escreval("")
+   
+    Escreva("Informe o valor de C: ")
+   Leia(c)
+   Escreval("")
+
+   Escreva("Informe o valor de D: ")
+   Leia(d)
+   Escreval("")
+   
+   // Variavéis de soma
+   
+   somAB <- a + b
+   somAC <- a + c
+   somAD <- a + d
+   somBC <- b + c
+   somBD <- b + d
+   somCD <- c + d
+   
+   // Variavéis de multiplicação
+   
+   multAB <- a * b
+   multAC <- a * c
+   multAD <- a * d
+   multBC <- b * c
+   multBD <- b * d
+   multCD <- c * d
+
+   Escreval("A + B =", somAB, " | " ,"A * B =", multAB)
+   Escreval("A + C =", somAC, " | " ,"A * C =", multAC)
+   Escreval("A + D =", somAD, " | " ,"A * D =", multAD)
+   Escreval("B + C =", somBC, " | " ,"B * C =", multBC)
+   Escreval("B + D =", somBD, " | " ,"B * D =", multBD)
+   Escreval("C + D =", somCD, " | " ,"C * D =", multCD)
+   
+Fimalgoritmo`,
   },
   "manzano-25-H": {
     title: "Volume da caixa retangular",
     prompt:
       "Calcular e apresentar o volume de uma caixa retangular: VOLUME ← COMPRIMENTO * LARGURA * ALTURA.",
-    code: `algoritmo "VolumeCaixaRetangular"
-var comprimento, largura, altura, volume: real
-inicio
-  leia(comprimento, largura, altura)
-  volume <- comprimento * largura * altura
-  escreval(volume:4:2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01H"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Elabora um programa que calcule e apresente o volume de uma
+//               caixa retangular, por meio da fórmula:
+//               VOLUME <- COMPRIMENTO * LARGURA * ALTURA.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 22/09/2026
+Var
+   // Seção de Declarações das variáveis
+   comprimento, largura, altura, volume: real
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Volume da Caixa Retangular --")
+   Escreval("")
+
+   Escreva("Informe o comprimento do retângulo: ")
+   Leia(comprimento)
+   Escreval("")
+
+   Escreva("Informe a largura do retângulo: ")
+   Leia(largura)
+   Escreval("")
+
+   Escreva("Informe a altura do retângulo: ")
+   Leia(altura)
+   Escreval("")
+
+   volume <- comprimento * largura * altura
+
+   Escreval("O volume da caixa retangular é:", volume)
+
+Fimalgoritmo`,
   },
   "manzano-25-I": {
     title: "Quadrado da diferença",
