@@ -242,7 +242,7 @@ Inicio
    a <- b
    b <- auxiliar
 
-   Escreval("A =", a, "|" ,"B =", b)
+   Escreval("A =", a, " | " ,"B =", b)
 
 Fimalgoritmo`,
   },
