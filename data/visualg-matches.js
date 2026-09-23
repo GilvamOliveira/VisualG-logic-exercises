@@ -176,7 +176,7 @@ Fimalgoritmo`,
 // Professor   : Jailson Costa dos Santos
 // Descrição   : Efetua o cálculo e a apresenta o valor de uma prestação em
 //               atraso, utilizando a fórmula
-//               PRESTACAO <- VALOR + (VALOR * TAXA/100) * TEMPO).
+//               PRESTACAO <- VALOR + (VALOR * TAXA/100) * TEMPO.
 // Autor(a)    : Gilvam J. T. de Oliveira
 // Data atual  : 22/09/2026
 Var
@@ -200,7 +200,7 @@ Inicio
    Leia(temp)
    Escreval("")
 
-   prestacao <- valor + (valor * taxa / 100) * temp)
+   prestacao <- valor + (valor * taxa / 100) * temp
    diferenca <- prestacao - valor
    
    Escreval("O valor em atraso será de: R$", prestacao:6:2)
@@ -358,55 +358,347 @@ Fimalgoritmo`,
     title: "Quadrado da diferença",
     prompt:
       "Ler dois inteiros A e B e imprimir o quadrado da diferença do primeiro pelo segundo.",
-    code: `algoritmo "QuadradoDaDiferenca"
-var a, b: inteiro
-inicio
-  leia(a, b)
-  escreval((a - b) ^ 2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01I"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê dois inteiros (variáveis A e B) e imprime o resultado
+//               do quadrado da diferença do primeiro valor pelo segundo.
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+Var
+   // Seção de Declarações das variáveis
+   a, b, diferenca: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("-- Quadrado Da Diferença --")
+   Escreval("")
+
+   Escreva("Digite o valor para a variável A: ")
+   Leia(A)
+   Escreval("")
+
+   Escreva("Digite o valor para a variável B: ")
+   Leia(B)
+   Escreval("")
+
+   diferenca <- (a - b) ^ 2
+
+   Escreval("O resultado do quadrado da diferença é: ", diferenca)
+
+Fimalgoritmo`,
   },
   "manzano-25-J": {
     title: "Dólar para real",
     prompt:
       "Converter um valor em dólar para real, solicitando a cotação do dólar e a quantidade de dólares.",
-    code: `algoritmo "DolarParaReal"
-var cotacao, dolar, reais: real
-inicio
-  leia(cotacao, dolar)
-  reais <- cotacao * dolar
-  escreval(reais:4:2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01J"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Conversão em real de um valor lido em dólar
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+Var
+   // Seção de Declarações das variáveis
+   dolar, reais, cotacao: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("-- Conversão em real de um valor lido em dólar --")
+   Escreval("")
+
+   Escreva("Digite a cotação atual do dólar (Ex: 5.25): ")
+   Leia(cotacao)
+   Escreval("")
+
+   Escreva("Digite a quantidade de dólares que você possui: U$ ")
+   Leia(dolar)
+   Escreval("")
+
+   reais <- cotacao * dolar
+
+   Escreval("A quantidade de dólares em reais que possui é: R$", reais:4:2)
+
+Fimalgoritmo`,
   },
   "manzano-25-K": {
     title: "Real para dólar",
     prompt:
       "Converter um valor em real para dólar, solicitando a cotação do dólar e a quantidade de reais.",
-    code: `algoritmo "RealParaDolar"
-var cotacao, dolar, reais: real
-inicio
-  leia(cotacao, reais)
-  dolar <- reais / cotacao
-  escreval(dolar:4:2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01K"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Conversão em dólar de um valor lido em real
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+Var
+   // Seção de Declarações das variáveis
+   dolar, reais, cotacao: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("-- Conversão em dólar de um valor lido em real --")
+   Escreval("")
+
+   Escreva("Digite a cotação atual do dólar (Ex: 5.25): ")
+   Leia(cotacao)
+   Escreval("")
+
+   Escreva("Digite a quantidade de reais que você possui: R$")
+   Leia(reais)
+   Escreval("")
+
+   dolar <- reais / cotacao
+
+   Escreval("A quantidade de reais em dólares que possui é: U$", dolar:4:2)
+
+Fimalgoritmo`,
   },
   "manzano-25-L": {
     title: "Soma dos quadrados",
     prompt: "Ler A, B e C e apresentar a soma dos quadrados dos três valores.",
-    code: `algoritmo "SomaDosQuadrados"
-var a, b, c: real
-inicio
-  leia(a, b, c)
-  escreval((a ^ 2) + (b ^ 2) + (c ^ 2))
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01L"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : O programa efetua a leitura de três valores (A, B e C)
+//               e apresenta como resultado final à soma dos quadrados dos
+//               três valores lidos.
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+
+Var
+   // Seção de Declarações das variáveis
+   // Variáveis de entrada
+   A, B, C, valorFinal: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("-- Soma Dos Quadrados --")
+   Escreval("")
+
+   Escreva("Digite o valor de A: ")
+   Leia(A)
+   Escreval("")
+
+   Escreva("Digite o valor de B: ")
+   Leia(B)
+   Escreval("")
+
+   Escreva("Digite o valor de C: ")
+   Leia(C)
+   Escreval("")
+
+   valorFinal <- (A ^ 2) + (B ^ 2) + (C ^ 2)
+
+   Escreval("A soma dos quadrados dos três valores é:", valorFinal)
+
+Fimalgoritmo`,
   },
   "manzano-25-M": {
     title: "Quadrado da soma",
     prompt: "Ler A, B e C e apresentar o quadrado da soma dos três valores.",
-    code: `algoritmo "QuadradoDaSoma"
-var a, b, c: real
-inicio
-  leia(a, b, c)
-  escreval((a + b + c) ^ 2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01M"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : O programa efetua a leitura de três valores (A, B e C)
+//               e apresenta como resultado final o quadrado da soma dos três
+//               valores lidos.
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+
+Var
+   // Seção de Declarações das variáveis
+   // Variáveis de entrada
+   A, B, C, valorFinal: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("-- Quadrado Da Soma --")
+   Escreval("")
+
+   Escreva("Digite o valor de A: ")
+   Leia(A)
+   Escreval("")
+
+   Escreva("Digite o valor de B: ")
+   Leia(B)
+   Escreval("")
+
+   Escreva("Digite o valor de C: ")
+   Leia(C)
+   Escreval("")
+
+   valorFinal <- (A + B + C) ^ 2
+
+   Escreval("O quadrado da soma dos três valores é:", valorFinal)
+
+Fimalgoritmo`,
+  },
+  "manzano-26-A": {
+    title: "Produto e soma",
+    prompt: "Ler quatro valores inteiros A, B, C e D. Apresentar o produto do primeiro pelo terceiro e a soma do segundo com o quarto.",
+    code: `Algoritmo "manzano_Extra-Ex1A"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Programa efetua a leitura de quatro valores inteiros
+//               (variáveis A, B, C e D). Ao final o programa apresenta o
+//               resultado do produto (variável P) do primeiro com o terceiro
+//               valor, e o resultado do produto (variável P) do primeiro
+//               com o terceiro valor, e o resultado da soma (variável S)
+//               do segundo com o quarto valor.
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+
+Var
+   // Seção de Declarações das variáveis
+   // Variáveis de entrada
+   a, b, c, d, variavelP, variavelS: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("-- Produtos E Somas --")
+   Escreval("")
+
+   Escreva("Digite o valor de A: ")
+   Leia(a)
+   Escreval("")
+
+   Escreva("Digite o valor de B: ")
+   Leia(b)
+   Escreval("")
+
+   Escreva("Digite o valor de C: ")
+   Leia(c)
+   Escreval("")
+
+   Escreva("Digite o valor de D: ")
+   Leia(d)
+   Escreval("")
+
+   variavelP <- a * c
+   variavelS <- b + d
+
+   Escreval("O produto do 1° valor (",a," ) pelo 3° valor (",c," ) (P) é: ", variavelP)
+   Escreval("A soma do 2° valor (",b," ) com o 4° valor (",d," ) (S) é: ", variavelS)
+
+Fimalgoritmo`,
+  },
+  "manzano-26-B": {
+    title: "Reajuste salarial",
+    prompt: "Ler o salário mensal e o percentual de reajuste de um trabalhador. Apresentar o novo salário.",
+    code: `Algoritmo "manzano_Extra-Ex1B"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê o valor correspondente ao salário mensal (variável SM)
+//               de um trabalhador e também o valor do percentual de reajuste
+//               (variável PR) a ser atribuído. Apresenta o valor do
+//               novo salário (variável NS).
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+
+Var
+   // Seção de Declarações das variáveis
+   // Variáveis de entrada
+   variavelSalarioMensal, variavelPercentualReajuste: real
+   variavelNovoSalario, variavelReajuste: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   Escreval("-- Reajuste Salarial --")
+   Escreval("")
+
+   Escreva("Informe o valor do seu salário mensal: ")
+   Leia(variavelSalarioMensal)
+   Escreval("")
+
+   Escreva("Informe o valor do porcentual de reajuste (%): ")
+   Leia(variavelPercentualReajuste)
+   Escreval("")
+
+   variavelReajuste <- variavelSalarioMensal * (variavelPercentualReajuste / 100)
+   variavelNovoSalario <- variavelSalarioMensal + variavelReajuste
+
+   Escreval("O valor do reajuste foi de: R$", variavelReajuste)
+   Escreval("")
+
+   Escreval("O valor do novo salário é: R$", variavelNovoSalario)
+
+Fimalgoritmo`,
+  },
+  "manzano-26-C": {
+    title: "Eleição sindical",
+    prompt: "Ler votos válidos de três candidatos, votos nulos e em branco; apresentar total de eleitores e os percentuais solicitados.",
+    code: `Algoritmo "manzano_Extra-Ex1C"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apuração De Votos de uma Eleição
+// Autor(a)    : Gilvam J. T. Oliveira
+// Data atual  : 02/09/2026
+
+Var
+   // Seção de Declarações das variáveis
+   // Variáveis de entrada
+   votosA, votosB, votosC : inteiro
+   votosNulos, votosBranco, totalValidos, totalEleitores : inteiro
+   percentualValidos, percentualA, percentualB, percentualC: real
+   percentualNulos, percentualBranco : real
+
+Inicio
+   // Entrada de dados
+   Escreval("-- Apuração de Votos --")
+   Escreval("")
+
+   Escreva("Digite os votos válidos do Candidato A: ")
+   Leia(votosA)
+   Escreval("")
+
+   Escreva("Digite os votos válidos do Candidato B: ")
+   Leia(votosB)
+   Escreval("")
+
+   Escreva("Digite os votos válidos do Candidato C: ")
+   Leia(votosC)
+   Escreval("")
+
+   Escreva("Digite a quantidade de votos nulos: ")
+   Leia(votosNulos)
+   Escreval("")
+
+   Escreva("Digite a quantidade de votos em branco: ")
+   Leia(votosBranco)
+   Escreval("")
+
+   // Processamento
+   totalValidos <- votosA + votosB + votosC
+   totalEleitores <- totalValidos + votosNulos + votosBranco
+
+   // Cálculo dos percentuais
+   percentualValidos <- (totalValidos / totalEleitores) * 100
+   percentualA <- (votosA / totalEleitores) * 100
+   percentualB <- (votosB / totalEleitores) * 100
+   percentualC <- (votosC / totalEleitores) * 100
+   percentualNulos <- (votosNulos / totalEleitores) * 100
+   percentualBranco <- (votosBranco / totalEleitores) * 100
+
+   // Saída de dados
+   Escreval("-- Resultado da Apuração Dos Votos --")
+   Escreval("")
+
+   Escreval("Total de eleitores: ", totalEleitores)
+   Escreval("Percentual de votos válidos totais: ", percentualValidos:1:2, "%")
+   Escreval("Percentual do Candidato A: ", percentualA:1:2, "%")
+   Escreval("Percentual do Candidato B: ", percentualB:1:2, "%")
+   Escreval("Percentual do Candidato C: ", percentualC:1:2, "%")
+   Escreval("Percentual de votos nulos: ", percentualNulos:1:2, "%")
+   Escreval("Percentual de votos em branco: ", percentualBranco:1:2, "%")
+
+Fimalgoritmo`,
   },
 };
