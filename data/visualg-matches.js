@@ -3,51 +3,169 @@ window.VISUALG_MATCHES = {
     title: "Celsius para Fahrenheit",
     prompt:
       "Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. Fórmula: F ← (9 * C + 160) / 5.",
-    code: `algoritmo "ConversaoFahrenheit"
-var celsius, fahrenheit: real
-inicio
-  leia(celsius)
-  fahrenheit <- (9 * celsius + 160) / 5
-  escreval(fahrenheit:4:2, " °F")
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01A"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê uma temperatura em graus Celsius e
+//               apresenta em graus Fahrenheit
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 16/09/2026
+Var
+   // Seção de Declarações das variáveis
+   celsius, fahrenheit : real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("                         ---  ---                        ")
+   Escreval("")
+
+   Escreval("   --- Conversor Celsius (°C) para Fahrenheit (°F) ---   ")
+   Escreval("")
+
+   Escreva("Digite a temperatura em graus Celsius (°C): ")
+   Leia(celsius)
+   Escreval("")
+
+   fahrenheit <- (9 * celsius + 160) / 5
+
+   Escreval("A conversão da temperatura Celsius em Fahrenheit é:", fahrenheit, "°F")
+   Escreval("")
+
+   Escreval("                         ---  ---                        ")
+
+Fimalgoritmo`,
   },
   "manzano-25-B": {
     title: "Fahrenheit para Celsius",
     prompt:
       "Ler uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. Fórmula: C ← (F - 32) * (5/9).",
-    code: `algoritmo "ConversaoCelsius"
-var celsius, fahrenheit: real
-inicio
-  leia(fahrenheit)
-  celsius <- (fahrenheit - 32) * (5 / 9)
-  escreval(celsius:4:2, " °C")
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01B"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê uma temperatura em graus Fahrenheit e
+//               apresenta em graus Celsius
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 16/09/2026
+Var
+   // Seção de Declarações das variáveis
+   celsius, fahrenheit : real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("                         ---  ---                        ")
+   Escreval("")
+
+   Escreval("   --- Conversor Fahrenheit (°F) para Celsius (°C) ---   ")
+   Escreval("")
+
+   Escreva("Digite a temperatura em graus Fahrenheit (°F): ")
+   Leia(fahrenheit)
+   Escreval("")
+
+   celsius <- (fahrenheit - 32) * (5 / 9)
+
+   Escreval("A conversão da temperatura Fahrenheit em Celsius é:", celsius, "°C")
+   Escreval("")
+
+   Escreval("                         ---  ---                        ")
+
+Fimalgoritmo`,
   },
   "manzano-25-C": {
     title: "Volume da lata de óleo",
     prompt:
       "Calcular e apresentar o volume de uma lata de óleo: VOLUME ← π * RAIO² * ALTURA.",
-    code: `algoritmo "CalculoVolume"
-var raio, altura, volume: real
-inicio
-  leia(raio, altura)
-  volume <- pi * (raio ^ 2) * altura
-  escreval(volume:4:2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01C"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Calcula e apresenta o valor do volume de uma lata de óleo
+//               utilizando a fórmula: volume <- pi * raio^2 * altura
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 16/09/2026
+Var
+   // Seção de Declarações das variáveis
+   volume, raio, altura : real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("            ---  ---             ")
+   Escreval("")
+
+   Escreval("   --- Volume Lata de Óleo ---   ")
+   Escreval("")
+
+   Escreva("Informe a altura: ")
+   Leia(altura)
+   Escreval("")
+   
+   Escreva("Informe o raio: ")
+   Leia(raio)
+   Escreval("")
+
+   volume <- pi * raio^2 * altura
+
+   Escreval("O volume da lata de óleo é de: ", volume:4:2)
+   Escreval("")
+
+   Escreval("            ---  ---             ")
+
+Fimalgoritmo`,
   },
   "manzano-25-D": {
     title: "Gasto de combustível",
     prompt:
       "Calcular os litros gastos em uma viagem por um automóvel que faz 12 km/l. Ler tempo e velocidade; DISTANCIA ← TEMPO * VELOCIDADE e LITROS_USADOS ← DISTANCIA / 12.",
-    code: `algoritmo "GastoCombustivel"
-var tempo, velocidade, distancia, litros_usados: real
-inicio
-  leia(tempo, velocidade)
-  distancia <- tempo * velocidade
-  litros_usados <- distancia / 12
-  escreval("Velocidade: ",velocidade," Tempo: ",tempo)
-  escreval("Distância: ",distancia," Litros: ",litros_usados:4:2)
-fimalgoritmo`,
+    code: `Algoritmo "manzano_Ex7-L01D"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Este processo descreve o cálculo automatizado do consumo de
+//               combustível de um veículo que rende 12 km/l, baseando-se no
+//               tempo de viagem e na velocidade média informados pelo usuário.
+//               O objetivo principal é calcular e apresentar de forma clara
+//               a distância percorrida e o total de litros utilizados.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 16/09/2026
+Var
+   // Seção de Declarações das variáveis
+   temp : inteiro
+   velocidade, distancia, litrosUsados  : real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("              ---  ---              ")
+   Escreval("")
+
+   Escreval("   --- Consumo de Combustível ---   ")
+   Escreval("")
+
+   Escreva("Informe o tempo gasto no percurso (Ex: 2 horas): ")
+   Leia(temp)
+   Escreval("")
+
+   Escreva("Informe a velocidade média utilizada: ")
+   Leia(velocidade)
+   Escreval("")
+
+   distancia <- temp * velocidade
+   litrosUsados <- distancia / 12
+   
+   Escreval("              ---  ---              ")
+
+   Escreva("A velocidade média utilizada foi de: ", velocidade, "Km/h")
+   Escreval("")
+   
+   Escreva("O tempo gasto no percurso foi de: ", temp, "h")
+   Escreval("")
+
+   Escreva("A distância percorrida foi de: ", distancia, "Km")
+   Escreval("")
+   
+   Escreva("A quantidade de litros utilizados foi de: ", litrosUsados, "L")
+   Escreval("")
+
+   Escreval("              ---  ---              ")
+
+Fimalgoritmo`,
   },
   "manzano-25-E": {
     title: "Prestação em atraso",
