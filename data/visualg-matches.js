@@ -701,4 +701,113 @@ Inicio
 
 Fimalgoritmo`,
   },
+
+
+
+
+
+
+
+  
+  "faccat-4-5": {
+    title: "Antecessor",
+    prompt: "Ler um valor e escrever seu antecessor.",
+    code: `Algoritmo "faccat_Pg4-Ex5"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Escreva um algoritmo para ler um valor
+//               (do teclado) e escrever (na tela) o seu antecessor.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 28/08/2026
+Var
+   // Seção de Declarações das variáveis
+   numero, antecessor: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Programa Antecessor --")
+   Escreval("")
+
+   Escreva("Digite um número: ")
+   Leia(numero)
+   Escreval("")
+
+   antecessor <- numero - 1
+
+   Escreval("O antecessor do número digitado é:", antecessor)
+
+Fimalgoritmo`,
+  },
+  "faccat-4-6": {
+    title: "Área do retângulo",
+    prompt: "Ler base e altura de um retângulo, calcular e escrever a área.",
+    code: `Algoritmo "faccat_Pg4-Ex6"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Algoritmo para ler as dimensões de um retângulo
+//              (base e altura), calcula e escreve a área do retângulo.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 28/08/2026
+Var
+   // Seção de Declarações das variáveis
+   base, altura, area:inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Programa Dimensões Retangulo --")
+   Escreval("")
+
+   Escreva("Digite o número da base: ")
+   Leia(base)
+   Escreval("")
+
+   Escreva("Digite o número da altura: ")
+   Leia(altura)
+   Escreval("")
+
+   area <- base * altura
+
+   Escreval("A área do retângulo é:",area)
+
+Fimalgoritmo`,
+  },
+  "faccat-4-7": {
+    title: "Idade em dias",
+    prompt: "Ler idade em anos, meses e dias e escrever apenas em dias; ano tem 365 dias e mês 30.",
+    code: `Algoritmo "faccat_Pg4-Ex7"
+// Disciplina   : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Algoritmo que lâ a idade de uma pessoa expressa em anos,
+//               meses e dias e escreva a idade dessa pessoa expressa apenas
+//               em dias.
+//               Considerar ano com 365 dias e mês com 30 dias.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 28/08/2026
+Var
+   // Seção de Declarações das variáveis
+   anos, meses, dias, totalDias:inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Programa Idade em Dias --")
+   Escreval("")
+   
+   Escreva("Digite a quantidade de anos: ")
+   Leia(anos)
+   Escreval("")
+   
+   Escreva("Digite a quantidade de meses: ")
+   Leia(meses)
+   Escreval("")
+   
+   Escreva("Digite a quantidade de dias: ")
+   Leia(dias)
+   Escreval("")
+   
+   totalDias <- (anos * 365) + (meses * 30) + dias
+   
+   Escreval("Dias desde o seu nascimento:",totalDias)
+
+Fimalgoritmo`,
+  },
 };
