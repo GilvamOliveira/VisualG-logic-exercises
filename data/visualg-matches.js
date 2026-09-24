@@ -775,7 +775,7 @@ Fimalgoritmo`,
     title: "Idade em dias",
     prompt: "Ler idade em anos, meses e dias e escrever apenas em dias; ano tem 365 dias e mês 30.",
     code: `Algoritmo "faccat_Pg4-Ex7"
-// Disciplina   : [Lógica de Programação com JavaScript]
+// Disciplina  : [Lógica de Programação com JavaScript]
 // Professor   : Jailson Costa dos Santos
 // Descrição   : Algoritmo que lâ a idade de uma pessoa expressa em anos,
 //               meses e dias e escreva a idade dessa pessoa expressa apenas
