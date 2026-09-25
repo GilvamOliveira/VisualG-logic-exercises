@@ -810,4 +810,37 @@ Inicio
 
 Fimalgoritmo`,
   },
+  "faccat-8-39": {
+    title: "Expressões lógicas",
+    prompt: "Para A=V, B=V e C=F, avaliar as expressões lógicas apresentadas no exercício.",
+    code: `Algoritmo "faccat_Pg8-Ex39"
+// Disciplina  : [Lógica de Programação de JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Para A=V, B=V e C=F, avalia as expressões lógicas apresentadas.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   a, b, c: logico
+   resultadoA, resultadoB, resultadoC: logico
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Expressões lógicas --")
+   Escreval("")
+
+   a := verdadeiro
+   b := verdadeiro
+   c := falso
+
+   resultadoA := (a e b) ou (a xou b)
+   resultadoB := (a ou b) e (a e c)
+   resultadoC := a ou c e b xou a e nao b
+   
+   Escreval("Resultado a): ",resultadoA)
+   Escreval("Resultado b): ",resultadoB)
+   Escreval("Resultado c): ",resultadoC)
+
+Fimalgoritmo`,
+  },
 };
