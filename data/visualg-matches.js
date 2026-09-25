@@ -701,6 +701,75 @@ Inicio
 
 Fimalgoritmo`,
   },
+  "manzano-46-A": {
+    title: "Tabuada",
+    prompt: "Apresentar a tabuada de multiplicar, de 1 a 10, de um número qualquer.",
+    code: `Algoritmo "manzano_Ex5.1.1-L03A"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta a tabuada de multiplicar, de 1 a 10,
+//               de um número qualquer.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero, contadora, resultado: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Tabuado do 1 ao 10 --")
+   Escreval("")
+
+   Escreva("Digite um número: ")
+   Leia(numero)
+   Escreval("")
+
+   contadora <- 1
+
+   enquanto (contadora <= 10) faca
+      resultado <- contadora * numero
+      Escreval(numero," x",contadora," =",resultado)
+
+      contadora <- contadora + 1
+   fimenquanto
+
+Fimalgoritmo`,
+  },
+  "manzano-46-B": {
+    title: "Soma de 1 a 100",
+    prompt: "Apresentar o total da soma dos cem primeiros números inteiros.",
+    code: `Algoritmo "manzano_Ex5.1.1-L03B"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o total da soma dos cem primeiros números inteiros.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   soma, contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma de 1 a 100 --")
+   Escreval("")
+
+   contadora <- 1
+   soma <- 0
+
+   enquanto (contadora <= 100) faca
+      soma <- soma + contadora
+      contadora <- contadora + 1
+   fimenquanto
+
+   Escreval("O resultado da soma dos cem primeiros números inteiros é: ", soma)
+
+Fimalgoritmo`,
+  },
+  "manzano-46-C": {
+    title: "Soma dos pares",
+    prompt: "Apresentar o somatório dos valores pares de 1 até 500.",
+    code: ``,
+  },
 
 
 
