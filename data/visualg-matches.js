@@ -810,6 +810,55 @@ Inicio
 
 Fimalgoritmo`,
   },
+  "faccat-6–8-38": {
+    title: "Acesso por código",
+    prompt: "Validar código 1234 e senha 9999, informando acesso permitido ou erro.",
+    code: `Algoritmo "faccat_Pg6-8-Ex38"
+// Disciplina  : [Lógica de Programação de JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê um número que é um código de usuário. Caso este código
+//               seja diferente de um código armazenado internamente no
+//               algoritmo (igual a 1234) é apresentada a mensagem
+//               ‘Usuário inválido!’. Caso o Código seja correto, é
+//               lido outro valor que é a senha. Se esta senha estiver
+//               incorreta (a certa é 9999) é mostrada a mensagem
+//               ‘senha incorreta’. Caso a senha esteja correta, é
+//               mostrada a mensagem ‘Acesso permitido’.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   codigoArmazenado, codigoDigitado: inteiro
+   senhaArmazenada, senhaDigitada: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Acesso Por Código --")
+   Escreval("")
+
+   codigoArmazenado <- 1234
+   senhaArmazenada <- 9999
+
+   Escreva("Digite o código: ")
+   Leia(codigoDigitado)
+   Escreval("")
+
+   se (codigoDigitado <> codigoArmazenado) entao
+      Escreval("Usuário Inválido!")
+   senao
+      Escreva("Digite a senha: ")
+      Leia(senhaDigitada)
+      Escreval("")
+
+      se (senhaArmazenada <> senhaDigitada) entao
+         Escreval("Senha Incorreta!")
+      senao
+         Escreval("Acesso Permitido!")
+      fimse
+   fimse
+
+Fimalgoritmo`,
+  },
   "faccat-8-39": {
     title: "Expressões lógicas",
     prompt: "Para A=V, B=V e C=F, avaliar as expressões lógicas apresentadas no exercício.",
