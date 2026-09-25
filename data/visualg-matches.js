@@ -829,13 +829,13 @@ Inicio
    Escreval("-- Expressões lógicas --")
    Escreval("")
 
-   a := verdadeiro
-   b := verdadeiro
-   c := falso
+   a <- verdadeiro
+   b <- verdadeiro
+   c <- falso
 
-   resultadoA := (a e b) ou (a xou b)
-   resultadoB := (a ou b) e (a e c)
-   resultadoC := a ou c e b xou a e nao b
+   resultadoA <- (a e b) ou (a xou b)
+   resultadoB <- (a ou b) e (a e c)
+   resultadoC <- a ou c e b xou a e nao b
    
    Escreval("Resultado a): ",resultadoA)
    Escreval("Resultado b): ",resultadoB)
