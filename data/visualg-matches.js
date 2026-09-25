@@ -1,4 +1,5 @@
 window.VISUALG_MATCHES = {
+  
   "manzano-25-A": {
     title: "Celsius para Fahrenheit",
     prompt:
@@ -35,6 +36,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-B": {
     title: "Fahrenheit para Celsius",
     prompt:
@@ -71,6 +73,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-C": {
     title: "Volume da lata de óleo",
     prompt:
@@ -111,6 +114,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-D": {
     title: "Gasto de combustível",
     prompt:
@@ -167,6 +171,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-E": {
     title: "Prestação em atraso",
     prompt:
@@ -208,6 +213,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-F": {
     title: "Troca de valores",
     prompt:
@@ -246,6 +252,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-G": {
     title: "Propriedade distributiva",
     prompt:
@@ -316,6 +323,7 @@ Inicio
    
 Fimalgoritmo`,
   },
+  
   "manzano-25-H": {
     title: "Volume da caixa retangular",
     prompt:
@@ -354,6 +362,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-I": {
     title: "Quadrado da diferença",
     prompt:
@@ -389,6 +398,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-J": {
     title: "Dólar para real",
     prompt:
@@ -423,6 +433,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-K": {
     title: "Real para dólar",
     prompt:
@@ -457,6 +468,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-L": {
     title: "Soma dos quadrados",
     prompt: "Ler A, B e C e apresentar a soma dos quadrados dos três valores.",
@@ -498,6 +510,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-25-M": {
     title: "Quadrado da soma",
     prompt: "Ler A, B e C e apresentar o quadrado da soma dos três valores.",
@@ -539,6 +552,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-26-A": {
     title: "Produto e soma",
     prompt: "Ler quatro valores inteiros A, B, C e D. Apresentar o produto do primeiro pelo terceiro e a soma do segundo com o quarto.",
@@ -589,6 +603,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-26-B": {
     title: "Reajuste salarial",
     prompt: "Ler o salário mensal e o percentual de reajuste de um trabalhador. Apresentar o novo salário.",
@@ -632,6 +647,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-26-C": {
     title: "Eleição sindical",
     prompt: "Ler votos válidos de três candidatos, votos nulos e em branco; apresentar total de eleitores e os percentuais solicitados.",
@@ -701,6 +717,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-46-A": {
     title: "Tabuada",
     prompt: "Apresentar a tabuada de multiplicar, de 1 a 10, de um número qualquer.",
@@ -735,6 +752,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-46-B": {
     title: "Soma de 1 a 100",
     prompt: "Apresentar o total da soma dos cem primeiros números inteiros.",
@@ -765,18 +783,190 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "manzano-46-C": {
     title: "Soma dos pares",
     prompt: "Apresentar o somatório dos valores pares de 1 até 500.",
     code: ``,
   },
+  
+    "manzano-46-D": {
+    title: "Números ímpares de 0 a 20",
+    prompt: "Apresentar todos os valores inteiros ímpares situados na faixa de 0 a 20, verificando dentro da repetição se cada número é ímpar.",
+    code: ``,
+  },
 
+  "manzano-46-E": {
+    title: "Potências de 3",
+    prompt: "Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15, sem utilizar o operador de exponenciação (^).",
+    code: ``,
+  },
 
+  "manzano-46-F": {
+    title: "Potência de uma base",
+    prompt: "Calcular o resultado de uma potência utilizando uma base e um expoente informados pelo usuário, sem utilizar o operador de exponenciação (^).",
+    code: ``,
+  },
 
+  "manzano-46-G": {
+    title: "Série de Fibonacci",
+    prompt: "Apresentar a série de Fibonacci até o décimo quinto termo, iniciando com os valores 1 e 1.",
+    code: ``,
+  },
 
+  "manzano-46-H": {
+    title: "Conversão Celsius para Fahrenheit",
+    prompt: "Apresentar a conversão de temperaturas de Celsius para Fahrenheit, de 10 em 10 graus, iniciando em 10°C e terminando em 100°C.",
+    code: ``,
+  },
 
+  "manzano-46-I": {
+    title: "Soma e média de 10 valores",
+    prompt: "Ler 10 valores numéricos e apresentar ao final o somatório e a média aritmética dos valores informados.",
+    code: ``,
+  },
 
+  "manzano-46-J": {
+    title: "Soma e média dos pares",
+    prompt: "Apresentar o resultado da soma e da média aritmética dos valores pares situados na faixa numérica de 50 a 70.",
+    code: ``,
+  },
 
+  "manzano-46-K": {
+    title: "Área total da residência",
+    prompt: "Calcular a área total de uma residência, lendo o nome, a largura e o comprimento de cada cômodo e acumulando as áreas até o usuário informar que não deseja continuar.",
+    code: ``,
+  },
+
+  "manzano-46-L": {
+    title: "Maior e menor valor",
+    prompt: "Ler valores inteiros positivos até que seja informado um valor negativo e, ao final, apresentar o maior e o menor valor informado.",
+    code: ``,
+  },
+    "manzano-50-A": {
+    title: "Quadrados de 15 a 200",
+    prompt: "Apresentar os quadrados dos números inteiros de 15 até 200.",
+    code: ``,
+  },
+
+  "manzano-50-B": {
+    title: "Soma dos pares",
+    prompt: "Apresentar o somatório dos valores pares existentes na faixa de 1 até 500.",
+    code: ``,
+  },
+
+  "manzano-50-C": {
+    title: "Divisíveis por 4",
+    prompt: "Apresentar todos os números menores que 200 que sejam divisíveis por 4, verificando essa condição dentro da repetição.",
+    code: ``,
+  },
+
+  "manzano-50-D": {
+    title: "Grãos de trigo no tabuleiro",
+    prompt: "Calcular o total de grãos de trigo em um tabuleiro de xadrez, começando com 1 grão e dobrando a quantidade a cada quadro até o 64º quadro.",
+    code: ``,
+  },
+
+  "manzano-50-E": {
+    title: "Soma de fatoriais",
+    prompt: "Ler 15 valores inteiros e apresentar ao final o somatório dos fatoriais de cada valor informado.",
+    code: ``,
+  },
+
+  "manzano-50-F": {
+    title: "Soma e média de valores positivos",
+    prompt: "Ler valores numéricos enquanto forem positivos e apresentar ao final o somatório, a média aritmética e a quantidade de valores lidos. O processo deve terminar quando for informado um valor negativo.",
+    code: ``,
+  },
+
+  "manzano-50-G": {
+    title: "Fatorial dos números ímpares",
+    prompt: "Apresentar o fatorial dos valores ímpares situados na faixa numérica de 1 a 10.",
+    code: ``,
+  },
+
+  "manzano-50-H": {
+    title: "Área total da residência",
+    prompt: "Calcular a área total de uma residência lendo o nome, a largura e o comprimento de cada cômodo e acumulando as áreas até o usuário informar que não deseja continuar.",
+    code: ``,
+  },
+
+  "manzano-50-I": {
+    title: "Maior e menor valor",
+    prompt: "Ler valores inteiros positivos até que seja informado um valor negativo e, ao final, apresentar o maior e o menor valor informado.",
+    code: ``,
+  },
+
+  "manzano-50-J": {
+    title: "Divisão sem operador DIV",
+    prompt: "Calcular o resultado inteiro da divisão de dois números utilizando uma estrutura de repetição, sem utilizar o operador DIV.",
+    code: ``,
+  },
+    "manzano-66-A": {
+    title: "Quadrados de 15 a 200",
+    prompt: "Apresentar os quadrados dos números inteiros de 15 até 200.",
+    code: ``,
+  },
+
+  "manzano-66-B": {
+    title: "Tabuada",
+    prompt: "Apresentar a tabuada de multiplicar, de 1 a 10, de um número qualquer.",
+    code: ``,
+  },
+
+  "manzano-66-C": {
+    title: "Soma de 1 a 100",
+    prompt: "Apresentar o total da soma dos cem primeiros números inteiros.",
+    code: ``,
+  },
+
+  "manzano-66-D": {
+    title: "Soma dos pares",
+    prompt: "Apresentar o somatório dos valores pares existentes na faixa de 1 até 500.",
+    code: ``,
+  },
+
+  "manzano-66-E": {
+    title: "Números ímpares de 0 a 20",
+    prompt: "Apresentar todos os valores inteiros ímpares situados na faixa de 0 a 20, verificando dentro da repetição se cada número é ímpar.",
+    code: ``,
+  },
+
+  "manzano-66-F": {
+    title: "Números divisíveis por 4",
+    prompt: "Apresentar todos os números menores que 200 que sejam divisíveis por 4, verificando essa condição durante a repetição.",
+    code: ``,
+  },
+
+  "manzano-66-G": {
+    title: "Potências de 3",
+    prompt: "Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15, sem utilizar o operador de exponenciação (^).",
+    code: ``,
+  },
+
+  "manzano-66-H": {
+    title: "Potência de uma base",
+    prompt: "Calcular o resultado de uma potência utilizando uma base e um expoente informados pelo usuário, sem utilizar o operador de exponenciação (^).",
+    code: ``,
+  },
+
+  "manzano-66-I": {
+    title: "Série de Fibonacci",
+    prompt: "Apresentar a série de Fibonacci até o décimo quinto termo, iniciando com os valores 1 e 1.",
+    code: ``,
+  },
+
+  "manzano-66-J": {
+    title: "Conversão Celsius para Fahrenheit",
+    prompt: "Apresentar a conversão de temperaturas de Celsius para Fahrenheit, de 10 em 10 graus, iniciando em 10°C e terminando em 100°C.",
+    code: ``,
+  },
+
+  "manzano-66-K": {
+    title: "Fatorial dos números ímpares",
+    prompt: "Apresentar o fatorial dos valores ímpares situados na faixa numérica de 1 a 10.",
+    code: ``,
+  },
   
   "faccat-4-5": {
     title: "Antecessor",
@@ -807,6 +997,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "faccat-4-6": {
     title: "Área do retângulo",
     prompt: "Ler base e altura de um retângulo, calcular e escrever a área.",
@@ -840,6 +1031,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "faccat-4-7": {
     title: "Idade em dias",
     prompt: "Ler idade em anos, meses e dias e escrever apenas em dias; ano tem 365 dias e mês 30.",
@@ -879,6 +1071,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "faccat-6–8-38": {
     title: "Acesso por código",
     prompt: "Validar código 1234 e senha 9999, informando acesso permitido ou erro.",
@@ -928,6 +1121,7 @@ Inicio
 
 Fimalgoritmo`,
   },
+  
   "faccat-8-39": {
     title: "Expressões lógicas",
     prompt: "Para A=V, B=V e C=F, avaliar as expressões lógicas apresentadas no exercício.",
