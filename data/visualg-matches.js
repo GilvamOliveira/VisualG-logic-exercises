@@ -1594,67 +1594,348 @@ Fimalgoritmo`,
     "manzano-66-A": {
     title: "Quadrados de 15 a 200",
     prompt: "Apresentar os quadrados dos números inteiros de 15 até 200.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05A"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta os quadrados dos números inteiros de 15 até 200.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero: inteiro
+   quadrado: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Quadrados de 15 a 200 --")
+   Escreval("")
+
+   para numero de 15 ate 200 faca
+      quadrado <- numero ^ 2
+      Escreval("O quadrado de", numero," é:", quadrado)
+   fimpara
+
+Fimalgoritmo`,
   },
 
   "manzano-66-B": {
     title: "Tabuada",
     prompt: "Apresentar a tabuada de multiplicar, de 1 a 10, de um número qualquer.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05B"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta a tabuada de multiplicar, de 1 a 10, de um
+//               número qualquer.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero, contadora, resultado: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Tabuada do 1 ao 10 --")
+   Escreval("")
+
+   Escreva("Digite um número: ")
+   Leia(numero)
+   Escreval("")
+
+   para contadora de 1 ate 10 faca
+      resultado <- contadora * numero
+      Escreval(numero," x",contadora," =",resultado)
+   fimpara
+
+Fimalgoritmo`,
   },
 
   "manzano-66-C": {
     title: "Soma de 1 a 100",
     prompt: "Apresentar o total da soma dos cem primeiros números inteiros.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05C"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o total da soma dos cem primeiros números
+//               inteiros.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   soma, contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma de 1 a 100 --")
+   Escreval("")
+
+   soma <- 0
+
+   para contadora de 1 ate 100 faca
+      soma <- soma + contadora
+   fimpara
+
+   Escreval("O resultado da soma dos cem primeiros números inteiros é:", soma)
+
+Fimalgoritmo`,
   },
 
   "manzano-66-D": {
     title: "Soma dos pares",
     prompt: "Apresentar o somatório dos valores pares existentes na faixa de 1 até 500.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05D"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o somatório dos valores pares existentes na
+//               faixa de 1 até 500.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora, soma: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma dos Pares de 1 a 500 --")
+   Escreval("")
+
+   soma <- 0
+
+   para contadora de 1 ate 500 faca
+      se (contadora mod 2 = 0) entao
+         soma <- soma + contadora
+      fimse
+   fimpara
+
+   Escreval("O resultado da soma dos pares de 1 a 500 é:", soma)
+
+Fimalgoritmo`,
   },
 
   "manzano-66-E": {
     title: "Números ímpares de 0 a 20",
     prompt: "Apresentar todos os valores inteiros ímpares situados na faixa de 0 a 20, verificando dentro da repetição se cada número é ímpar.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05E"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta todos os valores inteiros ímpares situados na
+//               faixa de 0 a 20, verificando dentro da repetição se cada
+//               número é ímpar.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Ímpares de 0 a 20 --")
+   Escreval("")
+
+   Escreval("Os números inteiros ímpares de 0 a 20 são:")
+   Escreval("")
+
+   para contadora de 0 ate 20 faca
+      se (contadora mod 2 = 1) entao
+         Escreval(contadora)
+      fimse
+   fimpara
+
+Fimalgoritmo`,
   },
 
   "manzano-66-F": {
     title: "Números divisíveis por 4",
     prompt: "Apresentar todos os números menores que 200 que sejam divisíveis por 4, verificando essa condição durante a repetição.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05F"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta todos os números menores que 200 que sejam
+//               divisíveis por 4, verificando essa condição durante a
+//               repetição.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Divisíveis por 4 Menores que 200 --")
+   Escreval("")
+
+   para contadora de 1 ate 199 faca
+      se (contadora mod 4 = 0) entao
+         Escreval(contadora)
+      fimse
+   fimpara
+
+Fimalgoritmo`,
   },
 
   "manzano-66-G": {
     title: "Potências de 3",
     prompt: "Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15, sem utilizar o operador de exponenciação (^).",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05G"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta as potências de 3 para expoentes de 0 a 15
+//               sem usar o operador ^.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   resultado, contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Potências de 3 --")
+   Escreval("")
+
+   resultado <- 1
+
+   para contadora de 0 ate 15 faca
+      Escreval("3 elevado a",contadora," =",resultado)
+      resultado <- resultado * 3
+   fimpara
+
+Fimalgoritmo`,
   },
 
   "manzano-66-H": {
     title: "Potência de uma base",
     prompt: "Calcular o resultado de uma potência utilizando uma base e um expoente informados pelo usuário, sem utilizar o operador de exponenciação (^).",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05H"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Calcula o resultado de uma potência utilizando uma base e
+//               um expoente informados pelo usuário, sem utilizar o
+//               operador de exponenciação (^)
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   base, expoente, contadora, resultado: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Potência de Base Qualquer --")
+   Escreval("")
+
+   Escreva("Digite a base: ")
+   Leia(base)
+   Escreval("")
+
+   Escreva("Digite o expoente: ")
+   Leia(expoente)
+   Escreval("")
+
+   resultado <- 1
+
+   para contadora de 1 ate expoente faca
+      resultado <- resultado * base
+   fimpara
+
+   Escreval(base," elevado a",expoente," =",resultado)
+
+Fimalgoritmo`,
   },
 
   "manzano-66-I": {
     title: "Série de Fibonacci",
     prompt: "Apresentar a série de Fibonacci até o décimo quinto termo, iniciando com os valores 1 e 1.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05I"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta a série de Fibonacci até o décimo quinto termo.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numeroA, numeroB, contadora, resultado: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Série de Fibonacci --")
+   Escreval("")
+
+   numeroA <- 1
+   numeroB <- 1
+
+   Escreval(numeroA)
+   Escreval(numeroB)
+
+   para contadora de 1 ate 12 faca
+      resultado <- numeroA + numeroB
+
+      Escreval(resultado)
+
+      numeroA <- numeroB
+      numeroB <- resultado
+   fimpara
+
+Fimalgoritmo`,
   },
 
   "manzano-66-J": {
     title: "Conversão Celsius para Fahrenheit",
     prompt: "Apresentar a conversão de temperaturas de Celsius para Fahrenheit, de 10 em 10 graus, iniciando em 10°C e terminando em 100°C.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05J"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta a conversão de 10°C a 100°C, de 10 em 10 graus.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   celsius: inteiro
+   fahrenheit: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Conversão Celsius para Fahrenheit --")
+   Escreval("")
+
+   para celsius de 10 ate 100 passo 10 faca
+      fahrenheit <- (9 * celsius + 160) / 5
+
+      Escreval("A conversão de",celsius,"°C para fahrenheit é de:",fahrenheit,"°F")
+   fimpara
+
+Fimalgoritmo`,
   },
 
   "manzano-66-K": {
     title: "Fatorial dos números ímpares",
     prompt: "Apresentar o fatorial dos valores ímpares situados na faixa numérica de 1 a 10.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.6.1-L05K"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o fatorial dos valores ímpares situados na
+//               faixa numérica de 1 a 10.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora, multiplicador, fatorial: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Fatorial dos Números Ímpares de 1 a 10 --")
+   Escreval("")
+
+   para contadora de 1 ate 10 faca
+      se (contadora mod 2 = 1) entao
+         fatorial <- 1
+
+         para multiplicador de 1 ate contadora faca
+            fatorial <- fatorial * multiplicador
+         fimpara
+
+         Escreval("O fatorial de", contadora," é:", fatorial)
+      fimse
+   fimpara
+
+Fimalgoritmo`,
   },
   
   "faccat-4-5": {
