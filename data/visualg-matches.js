@@ -2045,85 +2045,537 @@ Fimalgoritmo`,
   "faccat-4-8": {
   title: "Percentual de eleitores",
   prompt: "Ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg4-Ex8"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê o número total de eleitores de um município, o número
+//               de votos brancos, nulos e válidos. Calcula e escreve o
+//               percentual que cada um representa em relação ao total
+//               de eleitores.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   totalEleitores, votosBrancos, votosNulos, votosValidos: inteiro
+   percentualBrancos, percentualNulos, percentualValidos: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Percentual de Eleitores --")
+   Escreval("")
+
+   Escreva("Digite o total de eleitores: ")
+   Leia(totalEleitores)
+   Escreval("")
+
+   Escreva("Digite o número de votos brancos: ")
+   Leia(votosBrancos)
+   Escreval("")
+
+   Escreva("Digite o número de votos nulos: ")
+   Leia(votosNulos)
+   Escreval("")
+
+   Escreva("Digite o número de votos válidos: ")
+   Leia(votosValidos)
+   Escreval("")
+
+   percentualBrancos <- votosBrancos * 100 / totalEleitores
+   percentualNulos <- votosNulos * 100 / totalEleitores
+   percentualValidos <- votosValidos * 100 / totalEleitores
+
+   Escreval("O percentual de votos brancos é:", percentualBrancos:1:2, "%")
+   Escreval("O percentual de votos nulos é:", percentualNulos:1:2, "%")
+   Escreval("O percentual de votos válidos é:", percentualValidos:1:2, "%")
+
+Fimalgoritmo`,
 },
 
 "faccat-4-9": {
   title: "Reajuste salarial",
   prompt: "Ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg4-Ex9"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê o salário mensal atual de um funcionário e o percentual
+//               de reajuste. Calcula e escreve o valor do novo salário.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   salarioAtual, percentualReajuste, aumento, novoSalario: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Reajuste Salarial --")
+   Escreval("")
+
+   Escreva("Digite o salário mensal atual: R$ ")
+   Leia(salarioAtual)
+   Escreval("")
+
+   Escreva("Digite o percentual de reajuste (%): ")
+   Leia(percentualReajuste)
+   Escreval("")
+
+   aumento <- percentualReajuste * salarioAtual / 100
+   novoSalario <- salarioAtual + aumento
+
+   Escreval("O valor do novo salário é: R$", novoSalario:6:2)
+   Escreval("O valor do reajuste salarial é: R$", aumento:6:2)
+
+Fimalgoritmo`,
 },
 
 "faccat-4-10": {
   title: "Custo final do carro",
   prompt: "Ler o custo de fábrica de um carro e calcular o custo final ao consumidor, considerando 28% de distribuição e 45% de impostos aplicados ao custo de fábrica.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg4-Ex10"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : O custo de um carro novo ao consumidor é a soma do custo
+//               de fábrica com a porcentagem do distribuidor (28%) e dos
+//               impostos (45%), aplicados ao custo de fábrica. Lê o custo
+//               de fábrica, calcula e escreve o custo final ao consumidor.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   custoFabrica, percentualDistribuidor, percentualImpostos, custoFinal: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Custo Final do Carro --")
+   Escreval("")
+
+   Escreva("Digite o custo de fábrica: R$ ")
+   Leia(custoFabrica)
+   Escreval("")
+
+   percentualDistribuidor <- custoFabrica * 28 / 100
+   percentualImpostos <- custoFabrica * 45 / 100
+   custoFinal <- custoFabrica + percentualDistribuidor + percentualImpostos
+
+   Escreval("O custo final ao consumidor é: R$", custoFinal:6:2)
+
+Fimalgoritmo`,
 },
 
 "faccat-4-11": {
   title: "Salário do vendedor",
   prompt: "Ler o número de carros vendidos, o valor total das vendas, o salário fixo e o valor recebido por carro vendido. Calcular e escrever o salário final do vendedor, considerando também 5% sobre o valor das vendas.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg4-Ex11"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Uma revendedora paga a seus vendedores um salário fixo,
+//               mais uma comissão fixa por carro vendido e mais 5% do
+//               valor das vendas. Lê o número de carros vendidos, o valor
+//               total das vendas, o salário fixo e a comissão por carro.
+//               Calcula e escreve o salário final do vendedor.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numeroCarrosVendidos: inteiro
+   valorTotalVendas, salarioFixo, valorPorCarro: real
+   comissaoVendas, salarioFinal: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Salário do Vendedor --")
+   Escreval("")
+
+   Escreva("Digite o número de carros vendidos do(a) vendedor(a): ")
+   Leia(numeroCarrosVendidos)
+   Escreval("")
+
+   Escreva("Digite o valor total das vendas do(a) vendedor(a): R$ ")
+   Leia(valorTotalVendas)
+   Escreval("")
+
+   Escreva("Digite o salário fixo do(a) vendedor(a): R$ ")
+   Leia(salarioFixo)
+   Escreval("")
+
+   Escreva("Digite o valor recebido por carro vendido: R$ ")
+   Leia(valorPorCarro)
+   Escreval("")
+
+   comissaoVendas <- valorTotalVendas * 5 / 100
+   salarioFinal <- salarioFixo + (numeroCarrosVendidos * valorPorCarro) + comissaoVendas
+
+   Escreval("O salário final do vendedor é: R$", salarioFinal:6:2)
+
+Fimalgoritmo`,
 },
 
 "faccat-5-12": {
   title: "Fahrenheit para Celsius",
   prompt: "Ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-Ex12"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê uma temperatura em graus Fahrenheit, calcula e escreve
+//               o valor correspondente em graus Celsius.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   fahrenheit, celsius: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Conversão Fahrenheit para Celsius --")
+   Escreval("")
+
+   Escreva("Digite a temperatura em graus Fahrenheit (°F): ")
+   Leia(fahrenheit)
+   Escreval("")
+
+   celsius <- 5 * (fahrenheit - 32) / 9
+
+   Escreval("A temperatura em graus Celsius é: ", celsius:4:2, "°C")
+
+Fimalgoritmo`,
 },
 
 "faccat-5-13": {
   title: "Média ponderada",
   prompt: "Ler três notas de um aluno e calcular a média final ponderada, considerando pesos 2, 3 e 5 para as respectivas notas.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-Ex13"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê três notas de um aluno e calcula a média final
+//               ponderada, considerando pesos 2, 3 e 5 para as
+//               respectivas notas.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   nota1, nota2, nota3, mediaFinal: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Média Ponderada --")
+   Escreval("")
+
+   Escreva("Digite a nota 1 (peso 2): ")
+   Leia(nota1)
+   Escreval("")
+
+   Escreva("Digite a nota 2 (peso 3): ")
+   Leia(nota2)
+   Escreval("")
+
+   Escreva("Digite a nota 3 (peso 5): ")
+   Leia(nota3)
+   Escreval("")
+
+   mediaFinal <- (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10
+
+   Escreval("A média final ponderada das notas do(a) aluno(a) é: ", mediaFinal:4:2)
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-14": {
   title: "Maior que 10",
   prompt: "Ler um valor e escrever a mensagem 'É MAIOR QUE 10!' se o valor for maior que 10; caso contrário, escrever 'NÃO É MAIOR QUE 10!'.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex14"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê um valor e escreve a mensagem 'É MAIOR QUE 10!' se o
+//               valor lido for maior que 10, caso contrário escreve
+//               'NÃO É MAIOR QUE 10!'.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Maior que 10 --")
+   Escreval("")
+
+   Escreva("Digite um número: ")
+   Leia(numero)
+   Escreval("")
+
+   se (numero > 10) entao
+      Escreval("É MAIOR QUE 10!")
+   senao
+      Escreval("NÃO É MAIOR QUE 10!")
+   fimse
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-15": {
   title: "Positivo ou negativo",
   prompt: "Ler um valor e escrever se ele é positivo ou negativo, considerando o valor zero como positivo.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex15"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê um valor e escreve se é positivo ou negativo
+//               (considera o valor zero como positivo).
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Positivo ou Negativo --")
+   Escreval("")
+
+   Escreva("Digite um valor: ")
+   Leia(numero)
+   Escreval("")
+
+   se (numero >= 0) entao
+      Escreval("Positivo")
+   senao
+      Escreval("Negativo")
+   fimse
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-16": {
   title: "Preço das maçãs",
   prompt: "Ler o número de maçãs compradas. Cada maçã custa R$ 1,30 se forem compradas menos de uma dúzia e R$ 1,00 se forem compradas pelo menos 12. Calcular e escrever o custo total.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex16"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : As maçãs custam R$ 1,30 cada se forem compradas menos de
+//               uma dúzia, e R$ 1,00 se forem compradas pelo menos 12.
+//               Lê o número de maçãs compradas, calcula e escreve o
+//               custo total da compra.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   quantidade: inteiro
+   custoTotal: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Preço das Maçãs --")
+   Escreval("")
+
+   Escreva("Digite a quantidade de maçãs compradas: ")
+   Leia(quantidade)
+   Escreval("")
+
+   se (quantidade < 12) entao
+      custoTotal <- quantidade * 1.30
+   senao
+      custoTotal <- quantidade * 1.00
+   fimse
+
+   Escreval("O custo total da compra é: R$", custoTotal:4:2)
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-17": {
   title: "Aprovação do aluno",
   prompt: "Ler as notas da primeira e segunda avaliações de um aluno, calcular a média aritmética simples e informar se o aluno foi aprovado. Nota igual ou maior que 6 indica aprovação. Escrever também a média calculada.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex17"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê as notas da 1a. e 2a. avaliações de um aluno. Calcula
+//               a média aritmética simples e escreve uma mensagem que diga
+//               se o aluno foi ou não aprovado (nota >= 6 é aprovado).
+//               Escreve também a média calculada.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   nota1, nota2, media: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Aprovação do Aluno --")
+   Escreval("")
+
+   Escreva("Digite a nota da primeira avaliação: ")
+   Leia(nota1)
+   Escreval("")
+
+   Escreva("Digite a nota da segunda avaliação: ")
+   Leia(nota2)
+   Escreval("")
+
+   media <- (nota1 + nota2) / 2
+
+   se (media >= 6) entao
+      Escreval("Você foi aprovado!")
+   senao
+      Escreval("Você NÃO foi aprovado!")
+   fimse
+
+   Escreval("A média calculada foi: ", media:4:2)
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-18": {
   title: "Direito ao voto",
   prompt: "Ler o ano atual e o ano de nascimento de uma pessoa e informar se ela poderá ou não votar neste ano, sem considerar o mês de nascimento.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex18"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê o ano atual e o ano de nascimento de uma pessoa.
+//               Escreve uma mensagem que diga se ela poderá ou não votar
+//               este ano (não considera o mês em que a pessoa nasceu).
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   anoAtual, anoNascimento, idade: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Direito ao Voto --")
+   Escreval("")
+
+   Escreva("Digite o ano atual: ")
+   Leia(anoAtual)
+   Escreval("")
+
+   Escreva("Digite o ano de nascimento: ")
+   Leia(anoNascimento)
+   Escreval("")
+
+   idade <- anoAtual - anoNascimento
+
+   se (idade < 16) entao
+      Escreval("Não poderá votar este ano!")
+   senao
+      se(idade < 18) entao
+         Escreval("Voto opcional!")
+      senao
+         Escreval("Voto obrigatório!")
+      fimse
+   fimse
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-19": {
   title: "Maior de dois valores",
   prompt: "Ler dois valores diferentes e escrever o maior deles.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex19"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê dois valores (considera que não serão lidos valores
+//               iguais) e escreve o maior deles.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   a, b: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Maior de Dois Valores --")
+   Escreval("")
+
+   Escreva("Digite o valor de A: ")
+   Leia(a)
+   Escreval("")
+
+   Escreva("Digite o valor de B: ")
+   Leia(b)
+   Escreval("")
+
+   se (a > b) entao
+      Escreval("O maior valor é A =", a)
+   senao
+      Escreval("O maior valor é B =", b)
+   fimse
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-20": {
   title: "Ordem crescente",
   prompt: "Ler dois valores diferentes e escrevê-los em ordem crescente.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex20"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê dois valores (considera que não serão lidos valores
+//               iguais) e escreve-os em ordem crescente.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   a, b: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Ordem Crescente --")
+   Escreval("")
+
+   Escreva("Digite o valor de A: ")
+   Leia(a)
+   Escreval("")
+
+   Escreva("Digite o valor de B: ")
+   Leia(b)
+   Escreval("")
+
+   se (a > b) entao
+      Escreval("A ordem crescente dos valores é:",b," |",a)
+   senao
+      Escreval("A ordem crescente dos valores é:",a," |",b)
+   fimse
+
+Fimalgoritmo`,
 },
 
 "faccat-5–6-21": {
   title: "Duração do jogo",
   prompt: "Ler a hora de início e a hora de fim de um jogo de xadrez e calcular sua duração em horas. Considerar apenas horas inteiras, duração máxima de 24 horas e possibilidade de o jogo começar em um dia e terminar no dia seguinte.",
-  code: ``,
+  code: `Algoritmo "faccat_Pg5-6-Ex21"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê a hora de início e a hora de fim de um jogo de Xadrez
+//               (apenas horas inteiras) e calcula a duração do jogo em
+//               horas, sabendo-se que o tempo máximo de duração é de 24
+//               horas e que o jogo pode iniciar em um dia e terminar no
+//               dia seguinte.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 26/09/2026
+Var
+   // Seção de Declarações das variáveis
+   horaInicio, horaFim, duracao: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Duração da Partida de Xadrez --")
+   Escreval("")
+
+   Escreva("Digite a hora de início (0 a 23): ")
+   Leia(horaInicio)
+   Escreval("")
+
+   Escreva("Digite a hora de fim (0 a 23): ")
+   Leia(horaFim)
+   Escreval("")
+
+   se (horaFim >= horaInicio) entao
+      duracao <- horaFim - horaInicio
+   senao
+      duracao <- (24 - horaInicio) + horaFim
+   fimse
+
+   Escreval("A duração da Partida de Xadrez foi de:", duracao, " horas")
+
+Fimalgoritmo`,
 },
 
 "faccat-6–8-22": {
