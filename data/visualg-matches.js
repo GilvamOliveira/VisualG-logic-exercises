@@ -1249,6 +1249,186 @@ Inicio
 
 Fimalgoritmo`,
   },
+
+  "faccat-4-8": {
+  title: "Percentual de eleitores",
+  prompt: "Ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.",
+  code: ``,
+},
+
+"faccat-4-9": {
+  title: "Reajuste salarial",
+  prompt: "Ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.",
+  code: ``,
+},
+
+"faccat-4-10": {
+  title: "Custo final do carro",
+  prompt: "Ler o custo de fábrica de um carro e calcular o custo final ao consumidor, considerando 28% de distribuição e 45% de impostos aplicados ao custo de fábrica.",
+  code: ``,
+},
+
+"faccat-4-11": {
+  title: "Salário do vendedor",
+  prompt: "Ler o número de carros vendidos, o valor total das vendas, o salário fixo e o valor recebido por carro vendido. Calcular e escrever o salário final do vendedor, considerando também 5% sobre o valor das vendas.",
+  code: ``,
+},
+
+"faccat-5-12": {
+  title: "Fahrenheit para Celsius",
+  prompt: "Ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius.",
+  code: ``,
+},
+
+"faccat-5-13": {
+  title: "Média ponderada",
+  prompt: "Ler três notas de um aluno e calcular a média final ponderada, considerando pesos 2, 3 e 5 para as respectivas notas.",
+  code: ``,
+},
+
+"faccat-5–6-14": {
+  title: "Maior que 10",
+  prompt: "Ler um valor e escrever a mensagem 'É MAIOR QUE 10!' se o valor for maior que 10; caso contrário, escrever 'NÃO É MAIOR QUE 10!'.",
+  code: ``,
+},
+
+"faccat-5–6-15": {
+  title: "Positivo ou negativo",
+  prompt: "Ler um valor e escrever se ele é positivo ou negativo, considerando o valor zero como positivo.",
+  code: ``,
+},
+
+"faccat-5–6-16": {
+  title: "Preço das maçãs",
+  prompt: "Ler o número de maçãs compradas. Cada maçã custa R$ 1,30 se forem compradas menos de uma dúzia e R$ 1,00 se forem compradas pelo menos 12. Calcular e escrever o custo total.",
+  code: ``,
+},
+
+"faccat-5–6-17": {
+  title: "Aprovação do aluno",
+  prompt: "Ler as notas da primeira e segunda avaliações de um aluno, calcular a média aritmética simples e informar se o aluno foi aprovado. Nota igual ou maior que 6 indica aprovação. Escrever também a média calculada.",
+  code: ``,
+},
+
+"faccat-5–6-18": {
+  title: "Direito ao voto",
+  prompt: "Ler o ano atual e o ano de nascimento de uma pessoa e informar se ela poderá ou não votar neste ano, sem considerar o mês de nascimento.",
+  code: ``,
+},
+
+"faccat-5–6-19": {
+  title: "Maior de dois valores",
+  prompt: "Ler dois valores diferentes e escrever o maior deles.",
+  code: ``,
+},
+
+"faccat-5–6-20": {
+  title: "Ordem crescente",
+  prompt: "Ler dois valores diferentes e escrevê-los em ordem crescente.",
+  code: ``,
+},
+
+"faccat-5–6-21": {
+  title: "Duração do jogo",
+  prompt: "Ler a hora de início e a hora de fim de um jogo de xadrez e calcular sua duração em horas. Considerar apenas horas inteiras, duração máxima de 24 horas e possibilidade de o jogo começar em um dia e terminar no dia seguinte.",
+  code: ``,
+},
+
+"faccat-6–8-22": {
+  title: "Hora extra",
+  prompt: "Ler o número de horas trabalhadas em um mês e o salário por hora. Calcular o salário total, acrescentando hora extra para as horas que ultrapassarem 40 horas semanais, considerando um mês com 4 semanas exatas e adicional de 50%.",
+  code: ``,
+},
+
+"faccat-6–8-23": {
+  title: "Erros no algoritmo",
+  prompt: "Identificar os erros existentes em um algoritmo que recebe nome, altura e sexo de uma pessoa e calcula seu peso ideal. Para homens, utilizar (72,7 × altura) - 58; para mulheres, utilizar (62,1 × altura) - 44,7.",
+  code: ``,
+},
+
+"faccat-6–8-24": {
+  title: "Comissão do vendedor",
+  prompt: "Ler o salário fixo e o valor das vendas efetuadas por um vendedor. Calcular o salário total considerando comissão de 3% sobre as vendas até R$ 1.500,00 e 5% sobre o valor que ultrapassar R$ 1.500,00.",
+  code: ``,
+},
+
+"faccat-6–8-25": {
+  title: "Saldo bancário",
+  prompt: "Ler o número da conta, saldo, débito e crédito de um cliente. Calcular o saldo atual usando saldo - débito + crédito e informar se o saldo é positivo ou negativo.",
+  code: ``,
+},
+
+"faccat-6–8-26": {
+  title: "Controle de estoque",
+  prompt: "Ler a quantidade atual, máxima e mínima em estoque de um produto. Calcular a quantidade média entre a máxima e a mínima e informar se deve efetuar compra ou não.",
+  code: ``,
+},
+
+"faccat-6–8-27": {
+  title: "Positivo, negativo ou zero",
+  prompt: "Ler um valor e escrever se ele é positivo, negativo ou zero.",
+  code: ``,
+},
+
+"faccat-6–8-28": {
+  title: "Maior de três valores",
+  prompt: "Ler três valores diferentes e escrever o maior deles.",
+  code: ``,
+},
+
+"faccat-6–8-29": {
+  title: "Soma dos dois maiores",
+  prompt: "Ler três valores diferentes e escrever a soma dos dois maiores valores.",
+  code: ``,
+},
+
+"faccat-6–8-30": {
+  title: "Ordem crescente de três valores",
+  prompt: "Ler três valores diferentes e escrevê-los em ordem crescente.",
+  code: ``,
+},
+
+"faccat-6–8-31": {
+  title: "Formação de triângulo",
+  prompt: "Ler três valores A, B e C representando as medidas dos lados de um triângulo e informar se eles formam ou não um triângulo. Para formar um triângulo, cada lado deve ser menor que a soma dos outros dois lados.",
+  code: ``,
+},
+
+"faccat-6–8-32": {
+  title: "Vencedor da partida",
+  prompt: "Ler o nome de dois times e o número de gols marcados por cada um. Escrever o nome do time vencedor ou a palavra 'EMPATE' caso não haja vencedor.",
+  code: ``,
+},
+
+"faccat-6–8-33": {
+  title: "Comparação de números",
+  prompt: "Ler dois valores e imprimir 'Números iguais' caso sejam iguais, 'Primeiro é maior' caso o primeiro seja maior ou 'Segundo maior' caso o segundo seja maior.",
+  code: ``,
+},
+
+"faccat-6–8-34": {
+  title: "Análise de algoritmo",
+  prompt: "Analisar o algoritmo apresentado no exercício e identificar os erros existentes em sua estrutura e instruções.",
+  code: ``,
+},
+
+"faccat-6–8-35": {
+  title: "Posto de combustíveis",
+  prompt: "Ler o número de litros vendidos e o tipo de combustível, sendo A para álcool e G para gasolina. Calcular o valor a pagar considerando álcool a R$ 2,90, gasolina a R$ 3,30 e os descontos definidos para até 20 litros e acima de 20 litros.",
+  code: ``,
+},
+
+"faccat-6–8-36": {
+  title: "Idades de homens e mulheres",
+  prompt: "Ler as idades de dois homens e duas mulheres. Calcular e escrever a soma da idade do homem mais velho com a mulher mais nova e o produto da idade do homem mais novo com a mulher mais velha.",
+  code: ``,
+},
+
+"faccat-6–8-37": {
+  title: "Fruteira",
+  prompt: "Ler a quantidade de morangos e maçãs adquiridas. Calcular o valor da compra usando os preços por quilo definidos para até 5 kg e acima de 5 kg. Se a quantidade total ultrapassar 8 kg ou o valor da compra ultrapassar R$ 25,00, aplicar desconto de 10%.",
+  code: ``,
+},
   
   "faccat-6–8-38": {
     title: "Acesso por código",
