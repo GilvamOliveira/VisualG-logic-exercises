@@ -931,13 +931,71 @@ Fimalgoritmo`,
   "manzano-46-G": {
     title: "Série de Fibonacci",
     prompt: "Apresentar a série de Fibonacci até o décimo quinto termo, iniciando com os valores 1 e 1.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03G"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta a série de Fibonacci até o décimo quinto termo.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numeroA, numeroB, contadora, resultado: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Série de Fibonacci --")
+   Escreval("")
+
+   numeroA <- 1
+   numeroB <- 1
+   contadora <- 1
+
+   Escreval(numeroA)
+   Escreval(numeroB)
+
+   enquanto (contadora <= 12) faca
+      resultado <- numeroA + numeroB
+
+      Escreval(resultado)
+
+      numeroA <- numeroB
+      numeroB <- resultado
+
+      contadora <- contadora + 1
+   fimenquanto
+
+Fimalgoritmo`,
   },
 
   "manzano-46-H": {
     title: "Conversão Celsius para Fahrenheit",
     prompt: "Apresentar a conversão de temperaturas de Celsius para Fahrenheit, de 10 em 10 graus, iniciando em 10°C e terminando em 100°C.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03H"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta a conversão de 10°C a 100°C, de 10 em 10 graus.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   celsius: inteiro
+   fahrenheit: real
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Conversão Celsius para Fahrenheit --")
+   Escreval("")
+
+   celsius <- 10
+
+   enquanto (celsius <= 100) faca
+      fahrenheit <- (9 * celsius + 160) / 5
+
+      Escreval("A conversão de",celsius,"°C para fahrenheit é de:",fahrenheit,"°F")
+
+      celsius <- celsius + 10
+   fimenquanto
+
+Fimalgoritmo`,
   },
 
   "manzano-46-I": {
