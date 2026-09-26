@@ -1001,84 +1001,595 @@ Fimalgoritmo`,
   "manzano-46-I": {
     title: "Soma e média de 10 valores",
     prompt: "Ler 10 valores numéricos e apresentar ao final o somatório e a média aritmética dos valores informados.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03I"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê 10 valores numéricos e apresenta ao final o somatório
+//               e a média aritmética dos valores informados.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   valor, soma, media: real
+   contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma e Média de 10 Valores --")
+   Escreval("")
+
+   contadora <- 1
+   soma <- 0
+
+   enquanto (contadora <= 10) faca
+      Escreva("Digite o valor ", contadora, ": ")
+      Leia(valor)
+      Escreval("")
+
+      soma <- soma + valor
+      contadora <- contadora + 1
+   fimenquanto
+
+   media <- soma / 10
+
+   Escreval("O somatório dos valores lidos é:", soma)
+   Escreval("A média aritmética dos valores lidos é:", media)
+
+Fimalgoritmo`,
   },
 
   "manzano-46-J": {
     title: "Soma e média dos pares",
     prompt: "Apresentar o resultado da soma e da média aritmética dos valores pares situados na faixa numérica de 50 a 70.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03J"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o resultado da soma e da média aritmética dos
+//               valores pares situados na faixa numérica de 50 a 70.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora, soma, quantidade: inteiro
+   media: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma e Média dos Pares de 50 a 70 --")
+   Escreval("")
+
+   contadora <- 50
+   soma <- 0
+   quantidade <- 0
+
+   enquanto (contadora <= 70) faca
+
+      se (contadora mod 2 = 0) entao
+         soma <- soma + contadora
+         quantidade <- quantidade + 1
+      fimse
+
+      contadora <- contadora + 1
+   fimenquanto
+
+   media <- soma / quantidade
+
+   Escreval("A soma dos valores pares de 50 a 70 é:", soma)
+   Escreval("A média aritmética dos valores pares de 50 a 70 é:", media)
+
+Fimalgoritmo`,
   },
 
   "manzano-46-K": {
     title: "Área total da residência",
     prompt: "Calcular a área total de uma residência, lendo o nome, a largura e o comprimento de cada cômodo e acumulando as áreas até o usuário informar que não deseja continuar.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03K"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Calcula a área total de uma residência, lendo o nome, a
+//               largura e o comprimento de cada cômodo e acumulando as
+//               áreas até o usuário informar que não deseja continuar.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   nomeComodo: caractere
+   largura, comprimento, areaComodo, areaTotal: real
+   resposta: caractere
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Área Total da Residência --")
+   Escreval("")
+
+   areaTotal <- 0
+   resposta <- "S"
+
+   enquanto (resposta = "S") ou (resposta = "s") faca
+      Escreva("Digite o nome do cômodo: ")
+      Leia(nomeComodo)
+      Escreval("")
+
+      Escreva("Digite a largura do cômodo: ")
+      Leia(largura)
+      Escreval("")
+
+      Escreva("Digite o comprimento do cômodo: ")
+      Leia(comprimento)
+      Escreval("")
+
+      areaComodo <- largura * comprimento
+      areaTotal <- areaTotal + areaComodo
+
+      Escreval("A área do cômodo ", nomeComodo, " é de:", areaComodo)
+      Escreval("")
+
+      Escreva("Deseja continuar (S/N)? ")
+      Leia(resposta)
+      Escreval("")
+   fimenquanto
+
+   Escreval("A área total da residência é de:", areaTotal)
+
+Fimalgoritmo`,
   },
 
   "manzano-46-L": {
     title: "Maior e menor valor",
     prompt: "Ler valores inteiros positivos até que seja informado um valor negativo e, ao final, apresentar o maior e o menor valor informado.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03L"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê valores inteiros positivos até que seja informado um
+//               valor negativo e, ao final, apresenta o maior e o menor
+//               valor informado.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero, maior, menor: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Maior e Menor Valor --")
+   Escreval("")
+
+   Escreva("Digite um número positivo (negativo para encerrar): ")
+   Leia(numero)
+   Escreval("")
+
+   maior <- numero
+   menor <- numero
+
+   enquanto (numero >= 0) faca
+
+      se (numero > maior) entao
+         maior <- numero
+      fimse
+
+      se (numero < menor) entao
+         menor <- numero
+      fimse
+
+      Escreva("Digite um número positivo (negativo para encerrar): ")
+      Leia(numero)
+      Escreval("")
+   fimenquanto
+
+   Escreval("O maior número informado foi:", maior)
+   Escreval("O menor número informado foi:", menor)
+
+Fimalgoritmo`,
   },
     "manzano-50-A": {
     title: "Quadrados de 15 a 200",
     prompt: "Apresentar os quadrados dos números inteiros de 15 até 200.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04A"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta os quadrados dos números inteiros de 15 até 200.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero, quadrado: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Quadrados de 15 a 200 --")
+   Escreval("")
+
+   numero <- 15
+
+   repita
+      quadrado <- numero ^ 2
+      Escreval("O quadrado de", numero," é:", quadrado)
+
+      numero <- numero + 1
+   ate (numero > 200)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-B": {
     title: "Soma dos pares",
     prompt: "Apresentar o somatório dos valores pares existentes na faixa de 1 até 500.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04B"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o somatório dos valores pares existentes na
+//               faixa de 1 até 500.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora, soma: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma dos Pares de 1 a 500 --")
+   Escreval("")
+
+   contadora <- 1
+   soma <- 0
+
+   repita
+      se (contadora mod 2 = 0) entao
+         soma <- soma + contadora
+      fimse
+
+      contadora <- contadora + 1
+   ate (contadora > 500)
+
+   Escreval("O resultado da soma dos pares de 1 a 500 é:", soma)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-C": {
     title: "Divisíveis por 4",
     prompt: "Apresentar todos os números menores que 200 que sejam divisíveis por 4, verificando essa condição dentro da repetição.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04C"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta todos os números menores que 200 que sejam
+//               divisíveis por 4, verificando essa condição dentro da
+//               repetição.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Divisíveis por 4 Menores que 200 --")
+   Escreval("")
+
+   contadora <- 1
+
+   repita
+      se (contadora mod 4 = 0) entao
+         Escreval(contadora)
+      fimse
+
+      contadora <- contadora + 1
+   ate (contadora >= 200)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-D": {
     title: "Grãos de trigo no tabuleiro",
     prompt: "Calcular o total de grãos de trigo em um tabuleiro de xadrez, começando com 1 grão e dobrando a quantidade a cada quadro até o 64º quadro.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04D"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Calcula o total de grãos de trigo em um tabuleiro de
+//               xadrez, começando com 1 grão e dobrando a quantidade a
+//               cada quadro até o 64º quadro.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   quadro: inteiro
+   graos, total: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Grãos de Trigo no Tabuleiro --")
+   Escreval("")
+
+   quadro <- 1
+   graos <- 1
+   total <- 0
+
+   repita
+      total <- total + graos
+      graos <- graos * 2
+
+      quadro <- quadro + 1
+   ate (quadro > 64)
+
+   Escreval("O total de grãos de trigo no tabuleiro é:", total)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-E": {
     title: "Soma de fatoriais",
     prompt: "Ler 15 valores inteiros e apresentar ao final o somatório dos fatoriais de cada valor informado.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04E"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê 15 valores inteiros e apresenta ao final o somatório
+//               dos fatoriais de cada valor informado.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora, valor, multiplicador, fatorial: inteiro
+   somaFatoriais: real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma de Fatoriais --")
+   Escreval("")
+
+   contadora <- 1
+   somaFatoriais <- 0
+
+   repita
+      Escreva("Digite o valor",contadora, ": ")
+      Leia(valor)
+      Escreval("")
+
+      fatorial <- 1
+      multiplicador <- 1
+
+      repita
+         fatorial <- fatorial * multiplicador
+         multiplicador <- multiplicador + 1
+      ate (multiplicador > valor)
+
+      somaFatoriais <- somaFatoriais + fatorial
+
+      contadora <- contadora + 1
+   ate (contadora > 15)
+
+   Escreval("A soma dos fatoriais dos valores lidos é:", somaFatoriais)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-F": {
     title: "Soma e média de valores positivos",
     prompt: "Ler valores numéricos enquanto forem positivos e apresentar ao final o somatório, a média aritmética e a quantidade de valores lidos. O processo deve terminar quando for informado um valor negativo.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04F"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê valores numéricos enquanto forem positivos e apresenta
+//               ao final o somatório, a média aritmética e a quantidade
+//               de valores lidos. O processo termina quando for informado
+//               um valor negativo.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero, soma, media: real
+   quantidade: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma e Média de Valores Positivos --")
+   Escreval("")
+
+   soma <- 0
+   quantidade <- 0
+
+   repita
+      Escreva("Digite um número positivo (negativo para encerrar): ")
+      Leia(numero)
+      Escreval("")
+
+      se (numero >= 0) entao
+         soma <- soma + numero
+         quantidade <- quantidade + 1
+      fimse
+   ate (numero < 0)
+
+   media <- soma / quantidade
+
+   Escreval("A somatória dos números positivos lidos é:", soma)
+   Escreval("A quantidade de números lidos foi:", quantidade)
+   Escreval("A média aritmética dos números lidos é:", media)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-G": {
     title: "Fatorial dos números ímpares",
     prompt: "Apresentar o fatorial dos valores ímpares situados na faixa numérica de 1 a 10.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04G"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o fatorial dos valores ímpares situados na
+//               faixa numérica de 1 a 10.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora, multiplicador, fatorial: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Fatorial dos Números Ímpares de 1 a 10 --")
+   Escreval("")
+
+   contadora <- 1
+
+   repita
+      se (contadora mod 2 = 1) entao
+         fatorial <- 1
+         multiplicador <- 1
+
+         repita
+            fatorial <- fatorial * multiplicador
+            multiplicador <- multiplicador + 1
+         ate (multiplicador > contadora)
+
+         Escreval("O fatorial de", contadora," é:", fatorial)
+      fimse
+
+      contadora <- contadora + 1
+   ate (contadora > 10)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-H": {
     title: "Área total da residência",
     prompt: "Calcular a área total de uma residência lendo o nome, a largura e o comprimento de cada cômodo e acumulando as áreas até o usuário informar que não deseja continuar.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04H"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Calcula a área total de uma residência lendo o nome, a
+//               largura e o comprimento de cada cômodo e acumulando as
+//               áreas até o usuário informar que não deseja continuar.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   nomeComodo: caractere
+   largura, comprimento, areaComodo, areaTotal: real
+   resposta: caractere
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Área Total da Residência --")
+   Escreval("")
+
+   areaTotal <- 0
+
+   repita
+      Escreva("Digite o nome do cômodo: ")
+      Leia(nomeComodo)
+      Escreval("")
+
+      Escreva("Digite a largura do cômodo: ")
+      Leia(largura)
+      Escreval("")
+
+      Escreva("Digite o comprimento do cômodo: ")
+      Leia(comprimento)
+      Escreval("")
+
+      areaComodo <- largura * comprimento
+      areaTotal <- areaTotal + areaComodo
+
+      Escreval("A área do cômodo ", nomeComodo, " é de:", areaComodo)
+      Escreval("")
+
+      Escreva("Deseja continuar (S/N)? ")
+      Leia(resposta)
+      Escreval("")
+   ate (resposta = "N") ou (resposta = "n")
+
+   Escreval("A área total da residência é de:", areaTotal)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-I": {
     title: "Maior e menor valor",
     prompt: "Ler valores inteiros positivos até que seja informado um valor negativo e, ao final, apresentar o maior e o menor valor informado.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04I"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Lê valores inteiros positivos até que seja informado um
+//               valor negativo e, ao final, apresenta o maior e o menor
+//               valor informado.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   numero, maior, menor: inteiro
+   primeiro: logico
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Maior e Menor Valor --")
+   Escreval("")
+
+   primeiro <- verdadeiro
+
+   repita
+      Escreva("Digite um número (negativo para encerrar): ")
+      Leia(numero)
+      Escreval("")
+
+      se (numero >= 0) entao
+         se (primeiro = verdadeiro) entao
+            maior <- numero
+            menor <- numero
+            primeiro <- falso
+         senao
+            se (numero > maior) entao
+               maior <- numero
+            fimse
+
+            se (numero < menor) entao
+               menor <- numero
+            fimse
+         fimse
+      fimse
+   ate (numero < 0)
+
+   Escreval("O maior número informado foi:", maior)
+   Escreval("O menor número informado foi:", menor)
+
+Fimalgoritmo`,
   },
 
   "manzano-50-J": {
     title: "Divisão sem operador DIV",
     prompt: "Calcular o resultado inteiro da divisão de dois números utilizando uma estrutura de repetição, sem utilizar o operador DIV.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.2.1-L04J"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Calcula o resultado inteiro da divisão de dois números
+//               utilizando uma estrutura de repetição, sem utilizar o
+//               operador DIV.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   dividendo, divisor, resto, resultado: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Divisão Sem Operador DIV --")
+   Escreval("")
+
+   Escreva("Digite o dividendo: ")
+   Leia(dividendo)
+   Escreval("")
+
+   Escreva("Digite o divisor: ")
+   Leia(divisor)
+   Escreval("")
+
+   resto <- dividendo
+   resultado <- 0
+
+   repita
+      resto <- resto - divisor
+      resultado <- resultado + 1
+   ate (resto < divisor)
+
+   Escreval(dividendo," dividido por",divisor," é igual a:", resultado)
+
+Fimalgoritmo`,
   },
     "manzano-66-A": {
     title: "Quadrados de 15 a 200",
