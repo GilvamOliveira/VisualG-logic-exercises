@@ -787,25 +787,145 @@ Fimalgoritmo`,
   "manzano-46-C": {
     title: "Soma dos pares",
     prompt: "Apresentar o somatório dos valores pares de 1 até 500.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03C"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta o somatório dos valores pares de 1 até 500.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   soma, contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Soma dos pares --")
+   Escreval("")
+
+   contadora <- 1
+   soma <- 0
+
+   enquanto (contadora <= 500) faca
+
+      se (contadora mod 2 = 0) entao
+         soma <- soma + contadora
+      fimse
+
+      contadora <- contadora + 1
+   fimenquanto
+
+   Escreval("O resultado da soma dos pares de 1 a 500 é:",soma)
+
+Fimalgoritmo`,
   },
   
     "manzano-46-D": {
     title: "Números ímpares de 0 a 20",
     prompt: "Apresentar todos os valores inteiros ímpares situados na faixa de 0 a 20, verificando dentro da repetição se cada número é ímpar.",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03D"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta todos os valores inteiros ímpares situados na faixa
+//               de 0 a 20, verificando dentro da repetição se cada número é
+//               ímpar.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Ímpares de 0 a 20 --")
+   Escreval("")
+
+   contadora <- 0
+
+   Escreval("Os valores inteiros ímpares de 0 a 20 são:")
+   Escreval("")
+
+   enquanto (contadora <= 20) faca
+
+      se (contadora mod 2 = 1) entao
+         Escreval(contadora)
+      fimse
+
+      contadora <- contadora + 1
+   fimenquanto
+
+Fimalgoritmo`,
   },
 
   "manzano-46-E": {
     title: "Potências de 3",
     prompt: "Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15, sem utilizar o operador de exponenciação (^).",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03E"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Apresenta as potências de 3 para expoentes de 0 a 15
+//               sem usar o operador ^.
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   resultado, contadora: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Potências de 3 --")
+   Escreval("")
+
+   resultado <- 1
+   contadora <- 0
+
+   enquanto (contadora <= 15) faca
+      Escreval("3 elevado a",contadora," =",resultado)
+      resultado <- resultado * 3
+      contadora <- contadora + 1
+   fimenquanto
+
+Fimalgoritmo`,
   },
 
   "manzano-46-F": {
     title: "Potência de uma base",
     prompt: "Calcular o resultado de uma potência utilizando uma base e um expoente informados pelo usuário, sem utilizar o operador de exponenciação (^).",
-    code: ``,
+    code: `Algoritmo "manzano_Ex5.1.1-L03F"
+// Disciplina  : [Lógica de Programação com JavaScript]
+// Professor   : Jailson Costa dos Santos
+// Descrição   : Calcula o resultado de uma potência utilizando uma base e um
+//               expoente informados pelo usuário, sem utilizar o operador
+//               de exponenciação (^)
+// Autor(a)    : Gilvam J. T. de Oliveira
+// Data atual  : 25/09/2026
+Var
+   // Seção de Declarações das variáveis
+   base, expoente, contadora, resultado: inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   Escreval("-- Potência de base qualquer --")
+   Escreval("")
+
+   Escreva("Digite a base: ")
+   Leia(base)
+   Escreval("")
+
+   Escreva("Digite o expoente: ")
+   Leia(expoente)
+   Escreval("")
+
+   resultado <- 1
+   contadora <- expoente
+
+   enquanto (contadora > 0) faca
+      resultado <- resultado * base
+      contadora <- contadora - 1
+   fimenquanto
+
+   Escreval(base," elevado a",expoente," =",resultado)
+
+Fimalgoritmo`,
   },
 
   "manzano-46-G": {
